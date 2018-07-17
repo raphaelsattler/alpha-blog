@@ -1,5 +1,12 @@
 @import "bootstrap";
 
+.btn-group-xs > .btn, .btn-xs {
+    padding  : .5rem .4rem;
+    font-size  : .875rem;
+    line-height  : .5;
+    border-radius : .2rem;
+}
+
 .bg-blue {
 	background-color: #00bfff;
 }
@@ -42,6 +49,17 @@
 .article-actions {
 	border-top: 1px solid #eaeaea;
 	padding-top: 5px;
+}
+
+.article-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.article-body {
+	border-top: 1px solid #eaeaea;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 footer {
