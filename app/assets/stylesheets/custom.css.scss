@@ -1,7 +1,7 @@
 @import "bootstrap";
 
-.bg-light {
-	background-color: #00bfff !important;
+.bg-blue {
+	background-color: #00bfff;
 }
 
 #logo {
@@ -37,6 +37,11 @@
 
 .btn-xlg {
 	font-size: 1.7em;
+}
+
+.article-actions {
+	border-top: 1px solid #eaeaea;
+	padding-top: 5px;
 }
 
 footer {
