@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 	before_action :set_article, only: [:edit, :update, :show, :destroy]
 
 	def index
-		@articles = Article.all
+		@articles = Article.paginate(page: params[:page], per_page: 5)
 	end
 
 	def new
@@ -26,6 +26,7 @@ class ArticlesController < ApplicationController
 
 	def update
 		
+		@article.user = User.find(4)
 		if @article.update(article_params)
 			flash[:success] = "Article was successfully updated!"
 			redirect_to article_path(@article)
